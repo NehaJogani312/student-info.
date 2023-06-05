@@ -1,0 +1,24 @@
+.mainDiv {
+    display: flex;
+    justify-content: space-between;
+}
+h4{
+    font-size: 1.5rem;
+}
+.inputDiv{
+    position: relative;
+}
+.searchField{
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 30px;
+    padding: 3px 0 0 0px;
+}
+.searchBtn {
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 6px;
+    top: 1px;
+}

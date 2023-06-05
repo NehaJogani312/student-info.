@@ -1,0 +1,76 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+.animatedButton {
+  position: relative;
+  transition: top 0.5s ease-out;
+  animation-name: slide-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slide-in {
+  0% {
+    top: 0
+  }
+  100% {
+    top: 100%;
+  }
+}
+.appHeader {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.refBtn {
+  height: 100%;
+  width: 21%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.ref {
+  margin: 5px 5px 0 0;
+  font-size: 35px;
+  color: #0d6efd;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.ref:hover {
+  transform: rotate(180deg);
+}
+
+
+button {
+  padding: 10px 20px;
+  color: #fff;
+}
+
+@media(min-width:0) and (max-width:580px){
+  .header{
+    text-align: center;
+    justify-content: center;
+  }
+   .appHeader {
+    font-size: 18px;
+    width: 100%;
+  }
+  .refBtn {
+  height: 100%;
+  width: 36%;
+  }
+  .ref {
+  margin: 5px 5px 0 0;
+  font-size: 30px;
+  color: #0d6efd;
+  transition: 0.2s;
+  cursor: pointer;
+}
+}
+
